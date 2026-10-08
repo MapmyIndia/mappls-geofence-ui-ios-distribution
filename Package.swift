@@ -1,4 +1,5 @@
-// swift-tools-version:5.3
+// swift-tools-version: 5.9
+
 import PackageDescription
 
 let package = Package(
@@ -9,16 +10,14 @@ let package = Package(
     products: [
         .library(
             name: "MapplsGeofenceUI",
-            targets: ["MapplsGeofenceUI"])
-    ],
-    dependencies: [
-       
+            targets: ["MapplsGeofenceUI"]
+        )
     ],
     targets: [
         .binaryTarget(
             name: "MapplsGeofenceUI",
-            url: "https://mmi-api-team.s3.amazonaws.com/Mappls-SDKs/iOS_Legacy_Auth/MapplsGeofenceUI/MapplsGeofenceUI.xcframework-1.0.6.zip",
-            checksum: "cf526af9e58608b96717f7cd0d01bdebb071c755497574aebcc561f865ee4d1c"
+            url: "https://mmi-api-team.s3.amazonaws.com/Mappls-SDKs/iOS_Legacy_Auth/MapplsGeofenceUI/MapplsGeofenceUI.xcframework-1.0.4.zip",
+            checksum: "b064ae17eff8a1e567a0cd8b4f87f6c81979f293a6f1b87008703d232fc1f682"
         )
     ]
 )
