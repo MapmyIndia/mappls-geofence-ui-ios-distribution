@@ -25,18 +25,18 @@ In Xcode, choose **File > Add Package Dependencies…** and add each of the foll
 
 | Package | Repository URL | Version |
 | :---- | :---- | :---- |
-| `MapplsGeofenceUI` | `https://github.com/MapmyIndia/mappls-geofence-ui-distribution.git` | `1.0.4` |
+| `MapplsGeofenceUI` | `https://github.com/MapmyIndia/mappls-geofence-ui-distribution.git` | `1.0.7` |
 | `MapplsAPICore` | `https://github.com/MapmyIndia/mappls-api-core-distribution.git` | `1.0.18` |
-| `MapplsAPIKit` | `https://github.com/MapmyIndia/mappls-api-kit-distribution.git` | `2.0.38` |
+| `MapplsAPIKit` | `https://github.com/MapmyIndia/mappls-api-kit-distribution.git` | `2.0.39` |
 | `MapplsMap` | `https://github.com/MapmyIndia/mappls-map-ios-distribution.git` | `6.0.2` |
 
 Alternatively, declare them in your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/MapmyIndia/mappls-geofence-ui-distribution.git", exact: "1.0.4"),
+    .package(url: "https://github.com/MapmyIndia/mappls-geofence-ui-distribution.git", exact: "1.0.5"),
     .package(url: "https://github.com/MapmyIndia/mappls-api-core-distribution.git", exact: "1.0.18"),
-    .package(url: "https://github.com/MapmyIndia/mappls-api-kit-distribution.git", exact: "2.0.38"),
+    .package(url: "https://github.com/MapmyIndia/mappls-api-kit-distribution.git", exact: "2.0.39"),
     .package(url: "https://github.com/MapmyIndia/mappls-map-ios-distribution.git", exact: "6.0.2")
 ],
 targets: [
@@ -59,7 +59,7 @@ Then add the `MapplsGeofenceUI`, `MapplsAPICore`, `MapplsAPIKit` and `MapplsMap`
 The Geofence Plugin is also available on CocoaPods. Add the pod to your `Podfile`:
 
 ```cocoapods
-pod 'MapplsGeofenceUI', '1.0.4'
+pod 'MapplsGeofenceUI', '1.0.7'
 ```
 
 The required dependencies (`MapplsAPICore` and `MapplsAPIKit`) are declared by the podspec and installed automatically.
@@ -73,18 +73,19 @@ The required dependencies (`MapplsAPICore` and `MapplsAPIKit`) are declared by t
 
 ### [Dependencies](#Dependencies)
 
-MapplsGeofenceUI depends on the following Mappls SDKs. The versions below are the ones this release (`1.0.4`) is built and tested against.
+MapplsGeofenceUI depends on the following Mappls SDKs. The versions below are the ones this release (`1.0.7`) is built and tested against.
 
 | Dependency | Version | Repository (SPM) |
 | :---- | :---- | :---- |
 | `MapplsAPICore` | `1.0.18` | [mappls-api-core-distribution](https://github.com/MapmyIndia/mappls-api-core-distribution.git) |
-| `MapplsAPIKit` | `2.0.38` | [mappls-api-kit-distribution](https://github.com/MapmyIndia/mappls-api-kit-distribution.git) |
+| `MapplsAPIKit` | `2.0.39` | [mappls-api-kit-distribution](https://github.com/MapmyIndia/mappls-api-kit-distribution.git) |
 | `MapplsMap` | `6.0.2` | [mappls-map-ios-distribution](https://github.com/MapmyIndia/mappls-map-ios-distribution.git) |
 
 ### [Version History](#Version-History)
 
 | Version | Dated | Description |
 | :---- | :---- | :---- |
+| `1.0.7` | 21 Oct, 2026 | Updated to the latest dependencies. |
 | `1.0.4` | 08 Oct, 2026 | Updated to the latest dependencies. |
 | `1.0.3` | 19 Dec, 2025 | Added a delegate method to stop polyline dragging and a new optional parameter called delegate in the init method. |
 | `1.0.2` | 25 Feb, 2025 | 'bitcode' disabled to support Xcode 15. |
